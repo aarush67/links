@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechFixPro Websites</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ====== General Styles ====== */
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #333;
+  }
+
+  a { text-decoration: none; }
+
+  /* ====== Header ====== */
+  header {
+    text-align: center;
+    padding: 60px 20px 30px;
+    color: white;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  /* ====== Highlight Newest Website ====== */
+  .newest-site {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    max-width: 900px;
+    padding: 25px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .newest-site:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  }
+
+  .newest-site h2 {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  .newest-site a {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 10px;
+    background: #fff;
+    color: #4facfe;
+    font-weight: 700;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .newest-site a:hover {
+    background: #4facfe;
+    color: white;
+  }
+
+  /* ====== Cards Container ====== */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  /* ====== Individual Card ====== */
+  .card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  }
+
+  .card h2 {
+    margin-top: 0;
+    color: #fff;
+  }
+
+  .card p {
+    margin: 10px 0 20px;
+    font-size: 0.95rem;
+    color: #f0f0f0;
+  }
+
+  .card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #4facfe;
+    background: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .card a:hover {
+    background: #4facfe;
+    color: white;
+  }
+
+  /* ====== Footer ====== */
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    font-weight: 600;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  @media (max-width: 600px) {
+    header h1 { font-size: 2.2rem; }
+    .newest-site, .card { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to TechFixPro</h1>
+  <p>Your one-stop link to all my websites and apps!</p>
+</header>
+
+<section class="newest-site">
+  <h2>🌟 Newest Website: Apps</h2>
+  <p>Check out my latest creation! Hover over videos to see them in action.</p>
+  <a href="https://apps.techfixpro.net" target="_blank">Visit Apps</a>
+</section>
+
+<div class="container">
+  <div class="card">
+    <h2>Main Website</h2>
+    <p>Visit my main website for updates and info about all my projects.</p>
+    <a href="https://techfixpro.net" target="_blank">Go</a>
+  </div>
+
+  <div class="card">
+    <h2>Password Checker</h2>
+    <p>Check your passwords locally and securely using AES encryption.</p>
+    <a href="https://password.techfixpro.net" target="_blank">Go</a>
+  </div>
+
+  <div class="card">
+    <h2>Encryption Tool</h2>
+    <p>Encrypt and decrypt messages securely with a key/password.</p>
+    <a href="https://c.techfixpro.net" target="_blank">Go</a>
+  </div>
+
+  <div class="card">
+    <h2>Base64 Encoder</h2>
+    <p>Encode or decode Base64 strings without any keys required.</p>
+    <a href="https://base.techfixpro.net" target="_blank">Go</a>
+  </div>
+
+  <div class="card">
+    <h2>URL Shortener</h2>
+    <p>Shorten URLs and track clicks if you sign up.</p>
+    <a href="https://s.techfixpro.net" target="_blank">Go</a>
+  </div>
+
+  <div class="card">
+    <h2>Quote Generator</h2>
+    <p>Generate quotes for inspiration or fun.</p>
+    <a href="https://quotes.techfixpro.net" target="_blank">Go</a>
+  </div>
+
+  <div class="card">
+    <h2>What's My IP?</h2>
+    <p>Check your current IP address and location quickly.</p>
+    <a href="https://ip.techfixpro.net" target="_blank">Go</a>
+  </div>
+
+  <div class="card">
+    <h2>Articles</h2>
+    <p>Read the latest articles I’ve written on tech and apps.</p>
+    <a href="https://articles.techfixpro.net" target="_blank">Go</a>
+  </div>
+
+  <div class="card">
+    <h2>Unshorten URL</h2>
+    <p>Reveal the real destination of shortened links safely.</p>
+    <a href="https://unshorten.techfixpro.net" target="_blank">Go</a>
+  </div>
+
+  <div class="card">
+    <h2>Recipe Generator</h2>
+    <p>Get recipe ideas based on your ingredients and preferences.</p>
+    <a href="https://recipe.techfixpro.net" target="_blank">Go</a>
+  </div>
+</div>
+
+<footer>
+  <p>Enjoyed these websites or want to provide feedback? <a href="https://forms.gle/cvKHrFtxDc46FW2N7" target="_blank">Submit your feedback & ideas here</a></p>
+</footer>
+
+</body>
+</html>
